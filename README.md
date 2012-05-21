@@ -10,7 +10,7 @@ Adds pretty colors to your git output. Looks best with a black "Pro" terminal st
 
 To install this, copy the contents of the gitconfig, open your "~/.gitconfig" and paste these in. You can open your .gitconfig.
 
-    pico ~/.gitconfig
+    edit ~/.gitconfig
     
 git branch completion
 -----------------------
