@@ -24,6 +24,16 @@
     lg = log -p
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    unstage = reset HEAD
+    branches = !git-branches
+    put = push origin HEAD
+    rpo = remote prune origin
+    cob = !sh -c 'git co -b "$0"'
+    cor = !sh -c 'git co -t "$0"'
+    rmbr = !sh -c 'git branch -D "$0" && git push origin ":$0"'
+    smerge = merge --squash
+    dt = !sh -c 'git tag -d "$0" && git push origin :refs/tags/$0'
+    release-tag = !sh -c 'TAG=$0-`date +"%Y%m%d%H%M%S"` && echo "Creating Tag: $TAG" && git tag $TAG -am \"$1\" && git push --tags origin master'
 
 [core]
   editor = pico
