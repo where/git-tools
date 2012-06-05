@@ -27,7 +27,6 @@
     unstage = reset HEAD
     branches = !git-branches
     put = push origin HEAD
-    pullh = pull origin HEAD
     rpo = remote prune origin
     cob = !sh -c 'git co -b "$0"'
     cor = !sh -c 'git co -t "$0"'
